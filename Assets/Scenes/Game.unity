@@ -491,6 +491,7 @@ GameObject:
   - component: {fileID: 152793773}
   - component: {fileID: 152793772}
   - component: {fileID: 152793774}
+  - component: {fileID: 152793775}
   m_Layer: 6
   m_Name: Robot
   m_TagString: Untagged
@@ -512,7 +513,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -548,6 +549,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37c477b205d7e4ba0b0595e90c253440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &152793775
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152793771}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &224839301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4545,6 +4569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2113662122}
+  - component: {fileID: 2113662123}
   m_Layer: 3
   m_Name: Pistol
   m_TagString: Untagged
@@ -4568,6 +4593,18 @@ Transform:
   - {fileID: 491669986}
   m_Father: {fileID: 1464300170}
   m_LocalEulerAnglesHint: {x: 0, y: 80, z: -5}
+--- !u!114 &2113662123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113662121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f8f99b98dc844fd816e506e0fcc618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
